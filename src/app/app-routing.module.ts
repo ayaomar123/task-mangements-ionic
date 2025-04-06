@@ -11,6 +11,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'categories',
+    loadComponent: () => import('./pages/categories/categories.page').then(m => m.CategoriesPage)
+  },
+
 ];
 
 @NgModule({
